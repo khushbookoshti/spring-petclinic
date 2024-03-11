@@ -18,7 +18,7 @@ pipeline {
             post {
                 always {
                     jacoco(execPattern: 'target/**.exec')
-                    publishHTML(target: [reportDir: 'target/site/jacoco', reportFiles: 'index.html', reportName: 'JaCoCo Code Coverage Report'], keepAll: true)
+                    publishHTML(target: [reportDir: 'target/site/jacoco', reportFiles: 'welcome.html', reportName: 'JaCoCo Code Coverage Report'], keepAll: true)
                 }
             }
         }
